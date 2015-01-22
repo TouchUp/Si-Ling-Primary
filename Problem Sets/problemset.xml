@@ -1,0 +1,52 @@
+<xml>
+<problemset>
+	<problem>
+		<level>6</level>
+		<subject>science</subject>
+		<question>What is the period of the Earth's orbit around the Sun?</question>
+		<ans1>365 days</ans1>
+		<ans2>30 days</ans2>
+		<ans3>28 days</ans3>
+		<ans4>7 days</ans4>
+		<correctans>1</correctans>
+		<explanation>The earth takes 365 days to make one orbit around the Sun.</explanation>
+	</problem>
+	
+	<problem>
+		<level>5</level>
+		<subject>science</subject>
+		<question>What do plants need in order to respire?</question>
+		<ans1>Oxygen</ans1>
+		<ans2>Carbon Dioxide</ans2>
+		<ans3>Sunlight</ans3>
+		<ans4>Water</ans4>
+		<correctans>1</correctans>
+		<explanation>Plants need oxygen in order to respire and they give out carbon dioxide and water.</explanation>
+	</problem>
+	
+	<problem>
+		<level>6</level>
+		<subject>math</subject>	
+		<question>Mary sold 20% of her chickens in the morning. She sold another 200 chickens in the afternoon. Given that she has 40% of her chickens left, how many chickens in total did Mary have?</question>
+		<ans1>200</ans1>
+		<ans2>900</ans2>
+		<ans3>400</ans3>
+		<ans4>800</ans4>
+		<correctans>2</correctans>
+		<explanation>100% - 20% - 40% = 40%. 200 chickens is equivalent to 40% of Mary's chickens. Therefore, Mary had 900 chickens in total before.</explanation>
+	</problem>
+	
+	<problem>
+		<level>1</level>
+		<subject>math</subject>	
+		<question>John had $8.60. He gave half of it to his friend. How much money does he have left?</question>
+		<ans1>$4.00</ans1>
+		<ans2>$17.60</ans2>
+		<ans3>$4.30</ans3>
+		<ans4>$8.60</ans4>
+		<correctans>3</correctans>
+		<explanation>1/2 * 8.60 = 4.30.</explanation>
+	</problem>
+
+</problemset>
+</xml>

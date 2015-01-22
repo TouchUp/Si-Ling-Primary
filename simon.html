@@ -1,0 +1,176 @@
+<html>
+<head>
+	<script>
+	
+	currentPosition = 0;
+	score = 0;
+	
+	function press(x){
+		currentPosition ++;
+		changeColour(x);
+		verifyVeracity(currentPosition, x);
+	}
+	
+	function verifyVeracity(currentPosition, x){
+		currentNo = sequence[currentPosition-1];
+		if (x == currentNo){
+			score++;
+			document.getElementById("score").innerHTML = "Score: " + score;
+			if (currentPosition >= sequence.length){
+				start();
+				}
+			else{}
+			}
+		else {endGame();}
+		}
+	
+	function endGame(){
+		level = 0;
+		currentPosition = 0;
+		sequence = [];
+		document.getElementById("instr").innerHTML = "You lose! Try again? Your score was: " + score;
+		score = 0;
+		document.getElementById("button wrapper").innerHTML = "<button onclick='start();'>Try Again</button></span>";			
+		}
+		
+	
+	
+	function changeColour(x){
+			if (x == 1) {
+				document.getElementById(1).style.backgroundColor = "rgba(255,0,0,0.6)";
+				play_multi_sound('multiaudio1');			
+				}
+			else if (x == 2) {
+				document.getElementById(2).style.backgroundColor = "rgba(255,155,0,0.6)";
+				play_multi_sound('multiaudio2');
+				}
+			else if (x == 3) {
+				document.getElementById(3).style.backgroundColor = "rgba(255,200,0,0.6)";
+				play_multi_sound('multiaudio3');
+				}
+			else if (x == 4) {
+				document.getElementById(4).style.backgroundColor = "rgba(115,175,15,0.6)";
+				play_multi_sound('multiaudio4');
+				}
+			else if (x == 5) {
+				document.getElementById(5).style.backgroundColor = "rgba(3,147,50,0.6)";
+				play_multi_sound('multiaudio5');
+				}
+			else if (x == 6) {
+				document.getElementById(6).style.backgroundColor = "rgba(13,155,195,0.6)";
+				play_multi_sound('multiaudio6');
+				}
+			else if (x == 7) {
+				document.getElementById(7).style.backgroundColor = "rgba(5,65,140,0.6)";
+				play_multi_sound('multiaudio7');
+				}
+			else if (x == 8) {
+				document.getElementById(8).style.backgroundColor = "rgba(30,15,90,0.6)";
+				play_multi_sound('multiaudio8');
+				}
+			else if (x == 9) {
+				document.getElementById(9).style.backgroundColor = "rgba(200,15,100,0.6)";
+				play_multi_sound('multiaudio9');
+				}
+			else {
+				}
+			setTimeout(function(){document.getElementById(x).style.backgroundColor = "rgba(255,255,255,1.0)";}, 300);
+		}
+		
+	/* object that holds all game information */
+			sequence = [];
+			copy = [];
+			level = 0;
+		
+	function start(){
+		level++;
+		currentPosition = 0; //resets the current position
+		temp = Math.ceil(Math.random()*9);
+		document.getElementById("instr").innerHTML = "Look at the pattern and follow it!";		
+		document.getElementById("score").innerHTML = "Score: " + score;
+		document.getElementById("button wrapper").innerHTML = "";		
+		sequence.push(temp);
+		showOff(sequence);
+	}
+	
+	function showOff(sequence){
+		var i = 0;
+
+		var interval = setInterval(function(){
+			changeColour(sequence[i]);
+			i++;
+			if (i >= sequence.length) {
+				clearInterval(interval);
+				}	
+			}, 600);	
+		}
+	
+/* JAVASCRIPT AUDIO PLAYING */
+
+	var channel_max = 15;										// number of channels
+	audiochannels = new Array();
+	for (a=0;a<channel_max;a++) {									// prepare the channels
+		audiochannels[a] = new Array();
+		audiochannels[a]['channel'] = new Audio();						// create a new audio object
+		audiochannels[a]['finished'] = -1;							// expected end time for this channel
+	}
+	function play_multi_sound(s) {
+		for (a=0;a<audiochannels.length;a++) {
+			thistime = new Date();
+			if (audiochannels[a]['finished'] < thistime.getTime()) {			// is this channel finished?
+				audiochannels[a]['finished'] = thistime.getTime() + document.getElementById(s).duration*1000;
+				audiochannels[a]['channel'].src = document.getElementById(s).src;
+				audiochannels[a]['channel'].load();
+				audiochannels[a]['channel'].play();
+				break;
+			}
+		}
+	}	
+	
+//KOPED FROM http://www.storiesinflight.com/html5/audio.html 
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="simonstyle.css">
+	
+</head>
+<body oncontextmenu="return false">
+
+<audio id="multiaudio1" src="audio/1.wav" preload="auto"></audio>
+<audio id="multiaudio2" src="audio/2.wav" preload="auto"></audio>
+<audio id="multiaudio3" src="audio/3.wav" preload="auto"></audio>
+<audio id="multiaudio4" src="audio/4.wav" preload="auto"></audio>
+<audio id="multiaudio5" src="audio/5.wav" preload="auto"></audio>
+<audio id="multiaudio6" src="audio/6.wav" preload="auto"></audio>
+<audio id="multiaudio7" src="audio/7.wav" preload="auto"></audio>
+<audio id="multiaudio8" src="audio/8.wav" preload="auto"></audio>
+<audio id="multiaudio9" src="audio/9.wav" preload="auto"></audio>
+
+	<h2 id = "instr"> Look at the pattern and follow it!</h2>
+	<span id = "button wrapper"><button onclick="start();">Start</button></span>
+	<table id = "simon">
+		<tr>
+			<td class = "cell" id = "1" onclick = "press(1);"></td>
+			<td class = "cell" id = "2" onclick = "press(2);"></td>
+			<td class = "cell" id = "3" onclick = "press(3);"></td>
+		</tr>
+		<tr>
+			<td class = "cell" id = "4" onclick = "press(4);"></td>
+			<td class = "cell" id = "5" onclick = "press(5);"></td>
+			<td class = "cell" id = "6" onclick = "press(6);"></td>
+		</tr>
+		<tr>
+			<td class = "cell" id = "7" onclick = "press(7);"></td>
+			<td class = "cell" id = "8" onclick = "press(8);"></td>
+			<td class = "cell" id = "9" onclick = "press(9);"></td>
+		</tr>
+	</table>
+	
+	<h2 id ="score">Score: </h2>
+</body>
+
+
+<footer>
+<a href="index.html"><img src ="./Images/home1.png" height="128"" width = "128"></a>
+</footer>
+
+</html>

@@ -1,0 +1,17 @@
+http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html
+
+If you are a designer or developer creating applications for Flash Player, see Global security settings for content creators instead.
+
+Use the Global Security Settings panel to specify if SWF or FLV content that uses older security rules can access the Internet. (For information about why you may need to do this, see What are security settings?) To help you decide if it is safe to allow the older security rules to be used, ask yourself: Did I originally download this content myself from a website that I trust? Is the SWF or FLV content trying to communicate with a website that I trust? The website with which the SWF or FLV content wants to communicate is listed in the pop-up dialog that appears when the SWF or FLV content first tries to communicate with the website.
+
+To specify that SWF or FLV content on your computer may use the older security rules to communicate with the Internet:
+In the Settings Manager Global Security Settings panel, above, click the pop-up menu and select Add Location. 
+
+The Add Location box opens. If you arrived at the Settings Manager by clicking the Settings button in a dialog box, the Add Location box contains a path that looks something like C:\directoryname\filename.swf or /Users/directoryname/filename.swf; this path tells you which file tried to communicate with the Internet and was stopped by Flash Player security. If the path contains the content that you want to let communicate with the Internet, copy and paste the path into the Trust this location box. Or, click one of the Browse buttons and find the content yourself. 
+
+You can add an individual file or an entire directory. If you add an entire directory, all the files and subdirectories in that directory are trusted. Some SWF or FLV content consists of multiple related files, and you might need to trust the entire directory where all the related files are located. In general, avoid trusting top-level directories.
+Click Confirm. 
+
+The location is added to the Security Settings panel. Locations listed are always allowed to use the older security rules, even if the Always Deny or Always Ask options at the top of the Security panel are selected. 
+
+After you add trusted locations, you must restart the local SWF or FLV content by either refreshing the browser or restarting the player.

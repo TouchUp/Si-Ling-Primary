@@ -1,0 +1,185 @@
+body{
+	background-image: url("./Images/bg.jpg");
+	overflow: hidden;
+	}
+
+h1 {
+	font-family: Impact;
+	font-size: 500%;
+	color: black;
+	}
+
+h2 {
+	font-family: Arial;
+	font-size: 3em;
+}
+
+li.nav{
+	list-style-type: none;
+	display: inline;
+	margin:auto;
+	}
+	
+li.quiz{
+	list-style-type: none;
+	display: inline;
+	margin:auto;
+	padding:50px;
+}
+	
+#quiz{
+	margin: auto;
+	display: inline;
+	text-align: center;
+	}
+
+footer {
+	background-color: rgba(100, 100, 100, 0);
+	list-style-type: none;
+	width: 99%;
+	position: absolute;
+	bottom: 1.0em;
+	text-align:center;
+	}
+	
+#footer{
+	text-align: center;
+	}
+	
+#nav {
+	width: 70%;
+	margin: 0 auto;
+	text-align:center;
+		}
+
+#nav img {
+	width: 400px;
+	height: 400px;
+	}
+
+#ebook {
+background-color: rgba(40,40,40, 0.8);
+margin:auto;
+text-align: center;
+}
+
+#ebookbody {
+background-image: none;
+background-color: black;
+}
+
+#storybody {
+background-image: none;
+background-color: black;
+}
+
+
+#labbody {
+background-image: none;
+background-color: white;
+}
+
+.header{
+	margin-top: 10%;
+	text-align: center;
+	background-color: rgba(100, 100, 100, 0.6);
+	padding-top: 2em;
+}
+
+
+	
+
+/* for the quiz  entrance page */
+
+#wrapper {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+	padding-top: 4em;
+	padding-left: 4em;
+	padding-right: 4em;
+	border-radius: 100px;
+	background-color: rgba(180,180,180,0.6);	
+	}
+
+
+/*for the question page*/
+/* --------------------------- */
+
+#headspacefiller{
+	padding-bottom: 12%;
+	}
+
+#countdown {
+	font-family: "Courier New";
+	font-weight: 900;
+	font-size: 4em;
+	color: red;
+	}
+
+#questionsCorrect {
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 3em;
+	color: red;
+	}	
+
+#question {
+	font-family: Georgia;
+	font-size: 3em;
+	}
+
+#levelselect {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	-column-count: 2;
+	}
+	
+ .answers {
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	color: white;
+	font-family: 
+	}	
+	
+.column2 {
+		width:100%;
+		text-align:center;
+		}
+		
+.column2 img {
+	width: 100px;
+	height: 100px;
+	background-color: rgba(200,200,200,0.8);
+	border-radius: 25px;
+	}
+
+/* SIMON */
+
+
+/* Resources */
+
+#resourcelist{
+	text-align: center;
+	font-size: 2em;
+	list-style: none;
+}
+
+#resourcelist li {
+	list-style: none;
+	text-align: left;
+}
+
+#navcolumn {
+	border: 1px solid white;
+	width: 40%;
+	float: left;
+	background-color: rgba(200,200,200,1);
+}
+
+#videocolumn {
+	border: 5px solid white;
+	width: 50%;
+	float: right;
+}

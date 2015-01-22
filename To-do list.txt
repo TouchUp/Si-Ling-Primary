@@ -1,0 +1,7 @@
+download and install google chrome; 
+create a shortcut and drop it in the startup folder with parameters -kiosk and -disable-pinch and --allow-file-access-in-files;
+download and install dropbox and login to the imcomp dropbox;
+disable login password through netplwiz;
+create a task to start up the computer from 7 - 6 on weekdays only. (change BIOS settings, wakeup on alarm (press delete on startup) - task scheduler))
+http://www.looselytyped.net/2013/09/27/super-easy-source-control-using-git-and-dropbox-together/
+twiddle with the power options and make it such that it never sleeps

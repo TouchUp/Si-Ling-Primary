@@ -1,0 +1,48 @@
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<script>
+
+   // uncommented, the next line works, changing the video src to a new URL     
+   // document.getElementById('videoSource').src = "video2.m4v";
+    function changeVideo(i) { 
+    // but embedded in a function or called from a button onclick, does not work
+    	document.getElementById('video').src = i;
+    }       
+</script>
+
+
+<h1 align ="center"> resources </h1>
+
+
+<div id = "wrapper">
+
+<div id = "navcolumn">
+<ul id = "resourcelist">
+	<li><h3>P1 Math</h3></li>
+		<ul>
+			<li><a href = "#" onclick = "changeVideo('./P1 Math Content/Comparing Lengths.mp4')">Comparing Lengths</a></li>
+			<li><a href = "#" onclick = "changeVideo('./P1 Math Content/More or Less Video.mp4')" >More or Less? </a></li>
+			<li><a href ="#" onclick = "changeVideo('./P1 Math Content/Numbers song.mp4')">Numbers Song</a></li>
+			<li><a href ="#" onclick = "changeVideo('./P1 Math Content/Measuring Length Non-standard Units.mp4')">Measuring Non-Standard units</a></li>
+			
+		</ul>
+	<li><h3>something else</h3></li>
+</ul>
+</div>
+
+<div id = "videocolumn">
+<iframe id = "video" width = "100%" height = "50%" src = "./P1 Math Content/Comparing Lengths.mp4"></iframe>
+</div>
+
+
+
+	<footer>
+	<a href="index.html"><img src ="./Images/home1.png" height="128"" width = "128"></a>
+	</footer>
+
+</div>
+
+</body>
+</html>

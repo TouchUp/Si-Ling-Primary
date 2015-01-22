@@ -1,0 +1,26 @@
+<xml>
+<problemset>
+	<problem>
+		<level>1</level>
+		<subject>math</subject>	
+		<question>John had $8.60. He gave half of it to his friend. How much money does he have left?</question>
+		<ans1>$4.00</ans1>
+		<ans2>$17.60</ans2>
+		<ans3>$4.30</ans3>
+		<ans4>$8.60</ans4>
+		<correctans>3</correctans>
+		<explanation>1/2 * 8.60 = 4.30.</explanation>
+	</problem>
+	<problem>
+		<level>1</level>
+		<subject>math</subject>	
+		<question>There are two numbers on a card. The number on the left card is 54. The number on the right card is 42 more than the left card. What is the number on the right card?</question>
+		<ans1>87</ans1>
+		<ans2>96</ans2>
+		<ans3>90</ans3>
+		<ans4>12</ans4>
+		<correctans>2</correctans>
+		<explanation>54 + 42 = 96</explanation>
+	</problem>
+</problemset>
+</xml>

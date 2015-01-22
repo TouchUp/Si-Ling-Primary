@@ -1,0 +1,35 @@
+<html>
+<head>
+<script language="javascript">
+document.onmousedown=disableclick;
+status="Right Click Disabled";
+Function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert(status);
+     return false;    
+   }
+}
+</script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body oncontextmenu="return false">
+
+<div id ="nav">
+	<table>
+		<tr>
+			<td><a href="simon.html"><img src ="./Images/simon.png"/></a></td>
+			<td><a href="piano.html"><img src ="./Images/piano.png"/></a></td>
+		</tr>
+	</table>
+</div>
+
+
+	<footer>
+	<a href="index.html"><img src ="./Images/home1.png" height="128"" width = "128"></a>
+	</footer>
+	
+</body>
+</html>

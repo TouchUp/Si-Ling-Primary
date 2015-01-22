@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<script>
+
+x = 1;
+xmax = 17;
+
+function left(){
+	x--;
+	if (x <= 0){
+		x = 1;
+		}
+document.getElementById("ebook").innerHTML = '<img width = "90%" height = "84%" src = "./Images/slides/slide ' + x + '.jpg' + '">';
+}
+
+function right(){
+	x++;
+	if (x > 17){
+		x = 17;
+		}
+document.getElementById("ebook").innerHTML = '<img width = "90%" height = "84%" src = "./Images/slides/slide ' + x + '.jpg' + '">';
+
+}
+
+</script>
+
+</head>
+
+<body id = "ebookbody" oncontextmenu="return false">
+
+	<div id = "ebook">
+	<img src = "./Images/slides/slide 1.jpg" width = "90%" height = "84%">
+	</div>
+
+	<footer id="footer">
+		<a onclick = "left()"><img src ="./Images/left.png" ></a>
+	<a href="index.html"><img src ="./Images/home1.png" height="128"" width = "128"></a>
+		<a onclick = "right()"><img src ="./Images/right.png" ></a>
+	</footer>
+
+	
+</body>
+</html>

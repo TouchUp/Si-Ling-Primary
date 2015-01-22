@@ -1,0 +1,16 @@
+<xml>
+<problemset>
+	<problem>
+		<level>6</level>
+		<subject>science</subject>
+		<question>What is the period of the Earth's orbit around the Sun?</question>
+		<ans1>365 days</ans1>
+		<ans2>30 days</ans2>
+		<ans3>28 days</ans3>
+		<ans4>7 days</ans4>
+		<correctans>1</correctans>
+		<explanation>The earth takes 365 days to make one orbit around the Sun.</explanation>
+	</problem>
+
+</problemset>
+</xml>
